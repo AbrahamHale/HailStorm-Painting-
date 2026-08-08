@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 470" role="img" aria-label="Heritage Painting LLC — Work worth passing down">
+  <!-- Badge ground -->
+  <path d="M200 14 L338 78 L338 128 L352 142 L352 252 L338 266 L338 316 L200 446 L62 316 L62 266 L48 252 L48 142 L62 128 L62 78 Z"
+        fill="#241b12" stroke="#120d08" stroke-width="7" stroke-linejoin="round"/>
+  <!-- Inner cream keyline -->
+  <path d="M200 14 L338 78 L338 128 L352 142 L352 252 L338 266 L338 316 L200 446 L62 316 L62 266 L48 252 L48 142 L62 128 L62 78 Z"
+        fill="none" stroke="#e9dcc0" stroke-width="2.5"
+        transform="translate(200,230) scale(0.945) translate(-200,-230)"/>
+  <!-- Amber accent keyline -->
+  <path d="M200 14 L338 78 L338 128 L352 142 L352 252 L338 266 L338 316 L200 446 L62 316 L62 266 L48 252 L48 142 L62 128 L62 78 Z"
+        fill="none" stroke="#c98a2a" stroke-width="1.5"
+        transform="translate(200,230) scale(0.905) translate(-200,-230)"/>
+
+  <!-- House -->
+  <g>
+    <rect x="230" y="96" width="14" height="30" fill="#d9cdb6"/>
+    <rect x="166" y="126" width="68" height="68" fill="#d9cdb6"/>
+    <path d="M148 132 L200 86 L252 132 Z" fill="#efe6d2" stroke="#120d08" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="182" y="140" width="36" height="32" fill="#241b12"/>
+    <path d="M200 140 v32 M182 156 h36" stroke="#d9cdb6" stroke-width="4"/>
+  </g>
+
+  <!-- Paint brush (left) -->
+  <g transform="rotate(-38 130 118)">
+    <rect x="98" y="128" width="30" height="42" rx="6" fill="#7a5c39"/>
+    <rect x="94" y="106" width="38" height="24" rx="3" fill="#cfc8bb" stroke="#120d08" stroke-width="3"/>
+    <path d="M96 106 h34 l3 -34 q-20 -8 -40 0 Z" fill="#2b241c" stroke="#120d08" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Paint roller (right) -->
+  <g transform="rotate(38 278 108)">
+    <rect x="248" y="66" width="60" height="30" rx="14" fill="#d98e26" stroke="#120d08" stroke-width="3"/>
+    <path d="M308 81 h14 v22" fill="none" stroke="#cfc8bb" stroke-width="6" stroke-linecap="round"/>
+    <rect x="314" y="103" width="16" height="34" rx="6" fill="#2b241c" stroke="#120d08" stroke-width="3"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="200" y="258" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold"
+        font-size="52" fill="#efe3c8" textLength="262" lengthAdjust="spacingAndGlyphs">HERITAGE</text>
+  <line x1="72" y1="286" x2="112" y2="286" stroke="#c98a2a" stroke-width="3"/>
+  <line x1="288" y1="286" x2="328" y2="286" stroke="#c98a2a" stroke-width="3"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold"
+        font-size="23" fill="#efe3c8" letter-spacing="3" textLength="164" lengthAdjust="spacingAndGlyphs">PAINTING LLC</text>
+
+  <!-- Slogan banner -->
+  <rect x="60" y="312" width="280" height="46" rx="6" fill="#efe3c8" stroke="#c98a2a" stroke-width="3"/>
+  <text x="200" y="343" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="bold"
+        font-size="23" fill="#241b12" textLength="248" lengthAdjust="spacingAndGlyphs">Work worth passing down.</text>
+
+  <!-- Amber brush swoosh below banner -->
+  <path d="M152 394 Q200 412 248 394" fill="none" stroke="#c98a2a" stroke-width="8" stroke-linecap="round"/>
+</svg>

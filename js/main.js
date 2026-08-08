@@ -28,15 +28,14 @@ contactForm.addEventListener('submit', () => {
 // Keep the footer year current
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Swap the hero placeholder art for the real logo once images/logo.png exists
+// Prefer the original PNG badge in the hero if images/logo.png is uploaded
 const heroLogo = document.getElementById('heroLogo');
-const heroArtSvg = document.getElementById('heroArtSvg');
 
-if (heroLogo && heroArtSvg) {
+if (heroLogo) {
   const probe = new Image();
   probe.onload = () => {
-    heroLogo.hidden = false;
-    heroArtSvg.remove();
+    heroLogo.src = 'images/logo.png';
+    heroLogo.classList.add('is-photo');
   };
-  probe.src = heroLogo.src;
+  probe.src = 'images/logo.png';
 }
