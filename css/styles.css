@@ -1,18 +1,19 @@
-/* ===== HailStorm Painting — Site Styles ===== */
+/* ===== Heritage Painting LLC — Site Styles ===== */
 
 :root {
-  --blue: #2f6fed;
-  --blue-dark: #1b3f8f;
-  --blue-light: #eaf1ff;
-  --ink: #16233b;
-  --ink-soft: #4b5a74;
+  --blue: #2e6b52;        /* heritage green (accent) */
+  --blue-dark: #1f4a38;   /* deep pine */
+  --blue-light: #e8f1eb;
+  --ink: #1c2420;
+  --ink-soft: #4e5b53;
   --bg: #ffffff;
-  --bg-alt: #f4f7fc;
-  --hero-blob: #e3ecff;
-  --card-border: #e3e9f4;
+  --bg-alt: #f4f7f4;
+  --hero-blob: #e3ede6;
+  --card-border: #e2e8e2;
   --radius: 14px;
-  --shadow: 0 8px 30px rgba(22, 35, 59, 0.08);
+  --shadow: 0 8px 30px rgba(28, 36, 32, 0.08);
   --font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-brand: "American Typewriter", Rockwell, "Roboto Slab", Georgia, serif;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -52,22 +53,32 @@ img { max-width: 100%; display: block; }
 
 .brand {
   display: flex;
-  align-items: center;
-  gap: 0.55rem;
+  flex-direction: column;
   text-decoration: none;
-  color: var(--blue-dark);
+  line-height: 1;
 }
 
-.brand-icon { color: var(--blue); display: inline-flex; }
-
-.brand-text {
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
+.brand-name {
+  font-family: var(--font-brand);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   color: var(--ink);
 }
 
-.brand-accent { color: var(--blue); }
+.brand-sub {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  color: var(--blue);
+  margin-top: 0.28rem;
+}
+
+.brand-sub-inline {
+  font-size: 0.7em;
+  letter-spacing: 0.28em;
+  font-weight: 600;
+}
 
 .main-nav {
   display: flex;
@@ -224,7 +235,7 @@ img { max-width: 100%; display: block; }
 /* ===== Trust bar ===== */
 .trustbar {
   background: var(--blue-dark);
-  color: #dce7ff;
+  color: #ddeae0;
 }
 
 .trustbar-inner {
@@ -389,12 +400,12 @@ img { max-width: 100%; display: block; }
   font-size: 0.92rem;
 }
 
-.g1 { background: linear-gradient(135deg, #2f6fed, #7fa8f7); }
-.g2 { background: linear-gradient(135deg, #1b3f8f, #4d74d6); }
-.g3 { background: linear-gradient(135deg, #37548e, #92a9d8); }
-.g4 { background: linear-gradient(135deg, #5b8cf2, #b9cdfb); }
-.g5 { background: linear-gradient(135deg, #274b78, #6d8fc4); }
-.g6 { background: linear-gradient(135deg, #3b66c9, #89a9ec); }
+.g1 { background: linear-gradient(135deg, #2e6b52, #7fa78f); }
+.g2 { background: linear-gradient(135deg, #1f4a38, #4d7a63); }
+.g3 { background: linear-gradient(135deg, #55684f, #9cab8e); }
+.g4 { background: linear-gradient(135deg, #5d9078, #b9d1c2); }
+.g5 { background: linear-gradient(135deg, #33513f, #6f9480); }
+.g6 { background: linear-gradient(135deg, #3f7259, #8bb29c); }
 
 /* ===== Testimonials ===== */
 .testimonial {
@@ -503,7 +514,7 @@ img { max-width: 100%; display: block; }
 .contact-form textarea:focus {
   outline: none;
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(47, 111, 237, 0.15);
+  box-shadow: 0 0 0 3px rgba(46, 107, 82, 0.15);
 }
 
 .form-note {
@@ -515,7 +526,7 @@ img { max-width: 100%; display: block; }
 /* ===== Footer ===== */
 .site-footer {
   background: var(--ink);
-  color: #b9c4d8;
+  color: #b8c6bc;
 }
 
 .footer-inner {
@@ -526,7 +537,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
 }
 
-.footer-brand .brand-text { color: #fff; }
+.footer-brand .brand-name { color: #fff; font-family: var(--font-brand); font-size: 1.2rem; }
 
 .footer-brand p { font-size: 0.9rem; margin-top: 0.3rem; }
 
@@ -536,7 +547,7 @@ img { max-width: 100%; display: block; }
 }
 
 .footer-nav a {
-  color: #b9c4d8;
+  color: #b8c6bc;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.92rem;
