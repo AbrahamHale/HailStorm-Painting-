@@ -27,3 +27,16 @@ contactForm.addEventListener('submit', () => {
 
 // Keep the footer year current
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Swap the hero placeholder art for the real logo once images/logo.png exists
+const heroLogo = document.getElementById('heroLogo');
+const heroArtSvg = document.getElementById('heroArtSvg');
+
+if (heroLogo && heroArtSvg) {
+  const probe = new Image();
+  probe.onload = () => {
+    heroLogo.hidden = false;
+    heroArtSvg.remove();
+  };
+  probe.src = heroLogo.src;
+}

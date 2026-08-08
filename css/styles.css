@@ -1,17 +1,17 @@
 /* ===== Heritage Painting LLC — Site Styles ===== */
 
 :root {
-  --blue: #2e6b52;        /* heritage green (accent) */
-  --blue-dark: #1f4a38;   /* deep pine */
-  --blue-light: #e8f1eb;
-  --ink: #1c2420;
-  --ink-soft: #4e5b53;
-  --bg: #ffffff;
-  --bg-alt: #f4f7f4;
-  --hero-blob: #e3ede6;
-  --card-border: #e2e8e2;
+  --blue: #b5741a;        /* amber (accent, from logo) */
+  --blue-dark: #7a4c0e;   /* deep amber-brown */
+  --blue-light: #f7ead2;
+  --ink: #2a2119;         /* warm charcoal, from badge */
+  --ink-soft: #6b5d4b;
+  --bg: #fffdf9;
+  --bg-alt: #f7f1e6;      /* cream, from banner */
+  --hero-blob: #f0e4cc;
+  --card-border: #e8dfd0;
   --radius: 14px;
-  --shadow: 0 8px 30px rgba(28, 36, 32, 0.08);
+  --shadow: 0 8px 30px rgba(42, 33, 25, 0.08);
   --font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
   --font-brand: "American Typewriter", Rockwell, "Roboto Slab", Georgia, serif;
 }
@@ -232,10 +232,18 @@ img { max-width: 100%; display: block; }
 
 .hero-svg { width: 100%; height: auto; }
 
+.hero-logo {
+  width: 100%;
+  max-width: 380px;
+  margin-inline: auto;
+  border-radius: 22px;
+  box-shadow: 0 18px 50px rgba(42, 33, 25, 0.3);
+}
+
 /* ===== Trust bar ===== */
 .trustbar {
-  background: var(--blue-dark);
-  color: #ddeae0;
+  background: var(--ink);
+  color: #f2e6cd;
 }
 
 .trustbar-inner {
@@ -400,12 +408,12 @@ img { max-width: 100%; display: block; }
   font-size: 0.92rem;
 }
 
-.g1 { background: linear-gradient(135deg, #2e6b52, #7fa78f); }
-.g2 { background: linear-gradient(135deg, #1f4a38, #4d7a63); }
-.g3 { background: linear-gradient(135deg, #55684f, #9cab8e); }
-.g4 { background: linear-gradient(135deg, #5d9078, #b9d1c2); }
-.g5 { background: linear-gradient(135deg, #33513f, #6f9480); }
-.g6 { background: linear-gradient(135deg, #3f7259, #8bb29c); }
+.g1 { background: linear-gradient(135deg, #b5741a, #e0b26a); }
+.g2 { background: linear-gradient(135deg, #5d4a33, #937a5b); }
+.g3 { background: linear-gradient(135deg, #8a5510, #c68e3f); }
+.g4 { background: linear-gradient(135deg, #d9a95e, #f0dcb4); }
+.g5 { background: linear-gradient(135deg, #3a2d20, #6f5a41); }
+.g6 { background: linear-gradient(135deg, #a3702a, #d4a962); }
 
 /* ===== Testimonials ===== */
 .testimonial {
@@ -514,7 +522,7 @@ img { max-width: 100%; display: block; }
 .contact-form textarea:focus {
   outline: none;
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(46, 107, 82, 0.15);
+  box-shadow: 0 0 0 3px rgba(181, 116, 26, 0.18);
 }
 
 .form-note {
@@ -526,7 +534,7 @@ img { max-width: 100%; display: block; }
 /* ===== Footer ===== */
 .site-footer {
   background: var(--ink);
-  color: #b8c6bc;
+  color: #cbbfa9;
 }
 
 .footer-inner {
@@ -547,7 +555,7 @@ img { max-width: 100%; display: block; }
 }
 
 .footer-nav a {
-  color: #b8c6bc;
+  color: #cbbfa9;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.92rem;
