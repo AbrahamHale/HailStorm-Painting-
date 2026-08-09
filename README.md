@@ -1,6 +1,6 @@
 # Heritage Painting & Renewal — website
 
-Plain static HTML site for Heritage Painting & Renewal (heritagepaintingandrenewal.com, once the
+Plain static HTML site for Heritage Painting & Renewal (heritagepaintco.com, once the
 domain is bought). No WordPress, no frameworks, no build step — just HTML,
 CSS, and a little vanilla JavaScript. It will work the same in five years.
 
@@ -76,7 +76,7 @@ tools/set-slogan.sh "The new slogan here."
 The forms post to [Web3Forms](https://web3forms.com) — free, works on
 static sites.
 
-1. Go to web3forms.com, enter **info@heritagepaintingandrenewal.com**, and it emails
+1. Go to web3forms.com, enter **info@heritagepaintco.com**, and it emails
    you an **access key**.
 2. Open `estimate.html` and `contact.html`, find
    `YOUR-WEB3FORMS-ACCESS-KEY-HERE` (one spot in each file, marked with a
@@ -105,10 +105,10 @@ One-time setup — after this, every push to GitHub redeploys automatically:
 (You can rename the project in Cloudflare to `heritage-painting` to get
 `heritage-painting.pages.dev`.)
 
-## When you buy heritagepaintingandrenewal.com
+## When you buy heritagepaintco.com
 
 1. In Cloudflare Pages: your project → **Custom domains → Set up a custom
-   domain** → enter `heritagepaintingandrenewal.com` and follow the DNS steps it
+   domain** → enter `heritagepaintco.com` and follow the DNS steps it
    shows (easiest if you also move the domain's DNS to Cloudflare — it
    walks you through it).
 2. **Let Google in** (do NOT skip — the site is invisible to search until

@@ -4,7 +4,7 @@
 User-agent: *
 Disallow: /
 
-# LAUNCH version (use once heritagepaintingandrenewal.com is live):
+# LAUNCH version (use once heritagepaintco.com is live):
 # User-agent: *
 # Allow: /
-# Sitemap: https://heritagepaintingandrenewal.com/sitemap.xml
+# Sitemap: https://heritagepaintco.com/sitemap.xml
