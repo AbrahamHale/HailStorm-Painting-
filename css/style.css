@@ -12,8 +12,8 @@
   --text: #efe5cf;      /* cream — headings, primary text */
   --text-soft: #ccc0a6; /* body text */
   --muted: #a89b7e;     /* secondary text — keep it large or bold */
-  --amber: #e8940c;     /* accent from the logo roller */
-  --amber-soft: #f0a83a;
+  --amber: #d9871a;     /* accent gold pulled from the logo */
+  --amber-soft: #eba33c;
   --on-amber: #1c1204;  /* text on amber buttons */
   --max: 72rem;
   --pad: clamp(1rem, 4vw, 2rem);
@@ -128,20 +128,30 @@ section { padding: clamp(3rem, 9vw, 5.5rem) 0; }
   min-width: 0;
 }
 .brand img { width: 46px; height: 46px; border-radius: 50%; flex: none; }
-.brand b {
-  font-size: 1.05rem;
+/* two-line lockup: HERITAGE dominant, PAINTING & RENEWAL small beneath */
+.brand-text { display: flex; flex-direction: column; line-height: 1.05; }
+.brand-text b {
+  font-size: 1.15rem;
   font-weight: 800;
-  letter-spacing: .02em;
+  letter-spacing: .06em;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+.brand-text small {
+  font-size: .58rem;
+  font-weight: 700;
+  letter-spacing: .21em;
+  text-transform: uppercase;
+  color: var(--muted);
   white-space: nowrap;
 }
 /* narrow phones: logo + phone + menu only — the wordmark doesn't fit */
 @media (max-width: 33rem) {
-  .brand b { display: none; }
+  .brand-text { display: none; }
 }
 /* mid-size desktop: the full nav + wordmark don't both fit in the bar */
 @media (min-width: 64rem) and (max-width: 80rem) {
-  .brand b { display: none; }
+  .brand-text { display: none; }
 }
 
 .header-call {

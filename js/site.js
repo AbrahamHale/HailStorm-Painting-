@@ -12,6 +12,12 @@
 var PHONE_DISPLAY = "(907) 414-7475";
 var PHONE_TEL = "+19074147475";
 
+/* >>> SLOGAN — CHANGE IT HERE <<<
+   Same idea: edit this line, then run tools/set-slogan.sh (see README)
+   to update the static fallbacks and meta tags in the HTML. */
+
+var SLOGAN = "Bringing New Life to Every Surface.";
+
 /* ================================================================== */
 
 (function () {
@@ -24,6 +30,9 @@ var PHONE_TEL = "+19074147475";
   });
   document.querySelectorAll("[data-phone-href]").forEach(function (el) {
     el.setAttribute("href", "tel:" + PHONE_TEL);
+  });
+  document.querySelectorAll("[data-slogan]").forEach(function (el) {
+    el.textContent = SLOGAN;
   });
 
   // Mobile nav: close the <details> menu on outside click, Escape,
