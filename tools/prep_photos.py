@@ -102,6 +102,31 @@ def auto_alt(folder, base):
     return words
 
 
+def build_thumbs():
+    """640px thumbnails for gallery grids and cards -> images/thumbs/<folder>/."""
+    made = 0
+    for folder in sorted(os.listdir(IMAGES)):
+        d = os.path.join(IMAGES, folder)
+        if not os.path.isdir(d) or folder in SKIP_DIRS or folder == "thumbs":
+            continue
+        out_dir = os.path.join(IMAGES, "thumbs", folder)
+        os.makedirs(out_dir, exist_ok=True)
+        for f in sorted(os.listdir(d)):
+            if not f.lower().endswith((".jpg", ".jpeg", ".png")):
+                continue
+            src = os.path.join(d, f)
+            dst = os.path.join(out_dir, f)
+            if os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
+                continue
+            im = Image.open(src)
+            if im.mode != "RGB":
+                im = im.convert("RGB")
+            im.thumbnail((640, 640), Image.LANCZOS)
+            im.save(dst, "JPEG", quality=75, optimize=True, progressive=True)
+            made += 1
+    return made
+
+
 def build_manifest():
     overrides = {}
     if os.path.exists(ALT_FILE):
@@ -153,9 +178,11 @@ def main():
                 out = process(path)
                 converted += 1
                 print(f"  processed {os.path.relpath(out, ROOT)}")
+    thumbs = build_thumbs()
     entries = build_manifest()
     pairs = sum(1 for e in entries if e["role"] == "before")
-    print(f"{converted} image(s) processed, {len(entries)} in manifest, {pairs} before/after pair(s).")
+    print(f"{converted} image(s) processed, {thumbs} thumb(s) made, "
+          f"{len(entries)} in manifest, {pairs} before/after pair(s).")
 
 
 if __name__ == "__main__":

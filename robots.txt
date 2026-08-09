@@ -1,0 +1,10 @@
+# PRE-LAUNCH: this blocks all search engines while the site is on the
+# temporary pages.dev address. When the real domain is live, replace this
+# file's contents with the LAUNCH version below (see README).
+User-agent: *
+Disallow: /
+
+# LAUNCH version (use once heritagepainting.com is live):
+# User-agent: *
+# Allow: /
+# Sitemap: https://heritagepainting.com/sitemap.xml

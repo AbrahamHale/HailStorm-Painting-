@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get a Photo Estimate — Heritage Painting</title>
+<meta name="description" content="Send photos of your painting or staining job and get a written price back, usually in a day or two — without waiting for a drive-out. Serving Wadena, Park Rapids, and Staples, MN.">
+<!-- PRE-LAUNCH: keep the site out of Google until the real domain is live.
+     Delete the next line on every page when you launch. See README. -->
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Get a Photo Estimate — Heritage Painting">
+<meta property="og:description" content="Send photos, get a written price. No drive-out needed.">
+<meta property="og:image" content="images/exterior-residential/blue-house-dusk.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html">
+      <img src="images/logo/heritage-logo-round.png" alt="" width="46" height="46">
+      <b>Heritage Painting</b>
+    </a>
+    <nav class="nav-desktop" aria-label="Main">
+      <ul>
+        <li><a href="interior.html">Interior</a></li>
+        <li><a href="exterior.html">Exterior</a></li>
+        <li><a href="cabinets.html">Cabinets</a></li>
+        <li><a href="decks.html">Decks &amp; Logs</a></li>
+        <li><a href="pressure-washing.html">Washing</a></li>
+        <li><a href="commercial.html">Commercial</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav-cta" href="estimate.html">Photo Estimate</a></li>
+      </ul>
+    </nav>
+    <a class="header-call" href="tel:+19074147475" data-phone-href><span data-phone>(907) 414-7475</span></a>
+    <details class="nav">
+      <summary>Menu</summary>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="interior.html">Interior</a></li>
+        <li><a href="exterior.html">Exterior</a></li>
+        <li><a href="cabinets.html">Cabinets</a></li>
+        <li><a href="decks.html">Decks &amp; Logs</a></li>
+        <li><a href="pressure-washing.html">Washing</a></li>
+        <li><a href="commercial.html">Commercial</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="estimate.html">Photo Estimate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </details>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="wrap">
+    <span class="kicker">Photo estimates</span>
+    <h1>Send photos. Get a price.</h1>
+    <p class="lead">I cover a big area, and driving out to look at a small job can eat half a day — yours and mine. Send me photos and a few details instead, and I'll send back a written price, usually in a day or two.</p>
+    <p>If you'd rather I come look at it in person, that's fine too — just call. <a href="tel:+19074147475" data-phone-href><span data-phone>(907) 414-7475</span></a></p>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+
+    <!-- ======================================================
+         WEB3FORMS SETUP — READ THIS
+         The form posts to Web3Forms (free, works on static sites).
+         1. Go to https://web3forms.com and create a free access key
+            for abe@heritagepainting.com.
+         2. Paste the key into the access_key input below, replacing
+            YOUR-WEB3FORMS-ACCESS-KEY-HERE.
+         Submissions then arrive at abe@heritagepainting.com.
+         (Planned: swap this for a Jobber request form later — see README.)
+         ====================================================== -->
+    <form id="estimate-form" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="access_key" value="YOUR-WEB3FORMS-ACCESS-KEY-HERE">
+      <input type="hidden" name="subject" value="Photo estimate request — heritagepainting.com">
+      <input type="hidden" name="from_name" value="Heritage Painting website">
+
+      <h2>1. What do you need done?</h2>
+      <p>Tap everything that applies. Only the questions for what you pick will show up.</p>
+
+      <div class="grid grid-2 pick-grid">
+        <label class="pick-card">
+          <input type="checkbox" name="services" value="Interior Painting" data-section="s-interior">
+          <img src="images/thumbs/interior-residential/entryway-white-walls.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+          <b>Interior Painting</b>
+        </label>
+        <label class="pick-card">
+          <input type="checkbox" name="services" value="Exterior Painting" data-section="s-exterior">
+          <img src="images/thumbs/exterior-residential/green-new-build-front.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+          <b>Exterior Painting</b>
+        </label>
+        <label class="pick-card">
+          <input type="checkbox" name="services" value="Cabinets" data-section="s-cabinets">
+          <img src="images/thumbs/interior-residential/stairwell-landing.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+          <b>Cabinets</b>
+        </label>
+        <label class="pick-card">
+          <input type="checkbox" name="services" value="Decks &amp; Fences" data-section="s-decks">
+          <img src="images/thumbs/exterior-residential/teal-cottage-front-deck.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+          <b>Decks &amp; Fences</b>
+        </label>
+        <label class="pick-card">
+          <input type="checkbox" name="services" value="Log Home" data-section="s-log">
+          <img src="images/thumbs/interior-residential/vaulted-wood-ceiling-room.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+          <b>Log Home</b>
+        </label>
+        <label class="pick-card">
+          <input type="checkbox" name="services" value="Furniture" data-section="s-furniture">
+          <img src="images/thumbs/furniture/cream-dresser-front.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+          <b>Furniture</b>
+        </label>
+        <label class="pick-card">
+          <input type="checkbox" name="services" value="House Washing" data-section="s-housewash">
+          <img src="images/thumbs/exterior-residential/blue-house-backyard.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+          <b>House Washing</b>
+        </label>
+        <label class="pick-card">
+          <input type="checkbox" name="services" value="Concrete Washing" data-section="s-concrete">
+          <img src="images/thumbs/exterior-commercial/red-hall-after-rain.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+          <b>Concrete Washing</b>
+        </label>
+      </div>
+
+      <h2 class="mt">2. The basics</h2>
+
+      <div class="field">
+        <label for="f-name">Name</label>
+        <input type="text" id="f-name" name="name" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="f-phone">Phone</label>
+        <input type="tel" id="f-phone" name="phone" required autocomplete="tel">
+      </div>
+      <div class="field">
+        <label for="f-address">Address</label>
+        <input type="text" id="f-address" name="address" required autocomplete="street-address">
+      </div>
+      <div class="field">
+        <label for="f-what">What do you want done, in your own words?</label>
+        <textarea id="f-what" name="job_description" rows="4" required></textarea>
+      </div>
+      <div class="field">
+        <label for="f-when">When would you like it done?</label>
+        <input type="text" id="f-when" name="preferred_timing">
+      </div>
+      <fieldset>
+        <legend>Is your timing flexible?</legend>
+        <div class="choice-row">
+          <label><input type="radio" name="timing_flexible" value="Yes"> Yes</label>
+          <label><input type="radio" name="timing_flexible" value="No"> No</label>
+        </div>
+        <p class="hint">If you can be flexible I can sometimes fit you in sooner when another job shifts.</p>
+      </fieldset>
+      <div class="field">
+        <label for="f-year">Roughly what year was the house built?</label>
+        <input type="text" id="f-year" name="year_built" inputmode="numeric">
+        <p class="hint">If it's before 1978 there are extra lead-safe steps I'm required to take, and I'd rather price that up front than surprise you.</p>
+      </div>
+
+      <div id="service-sections">
+        <h2 class="svc-heading" hidden>3. About the job</h2>
+
+        <!-- ============ INTERIOR ============ -->
+        <fieldset id="s-interior" hidden>
+          <legend>Interior painting</legend>
+          <div class="field">
+            <label for="i-rooms">Which rooms?</label>
+            <input type="text" id="i-rooms" name="interior_rooms" placeholder="e.g. living room, kitchen, two bedrooms">
+          </div>
+          <div class="field">
+            <label for="i-scope">For each room — walls only, walls + ceiling, or walls + ceiling + trim?</label>
+            <textarea id="i-scope" name="interior_scope" rows="3" placeholder="e.g. Living room: walls + ceiling. Bedrooms: walls only."></textarea>
+          </div>
+          <div class="field">
+            <label for="i-size">Rough room sizes — length, width, ceiling height</label>
+            <textarea id="i-size" name="interior_sizes" rows="3" placeholder="e.g. Living room about 15 x 20, 9 ft ceilings"></textarea>
+          </div>
+          <div class="field">
+            <label for="i-doors">How many doors and windows?</label>
+            <input type="text" id="i-doors" name="interior_doors_windows">
+          </div>
+          <fieldset>
+            <legend>Color change</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="interior_color_change" value="Going lighter"> Going lighter</label>
+              <label><input type="radio" name="interior_color_change" value="Going darker"> Going darker</label>
+              <label><input type="radio" name="interior_color_change" value="About the same"> About the same</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="i-damage">Any water stains, cracks, nail pops, or patches?</label>
+            <textarea id="i-damage" name="interior_damage" rows="2"></textarea>
+          </div>
+          <fieldset>
+            <legend>Lived in or empty?</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="interior_occupied" value="Lived in"> Lived in</label>
+              <label><input type="radio" name="interior_occupied" value="Empty"> Empty</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="i-furniture">How much furniture needs moving?</label>
+            <input type="text" id="i-furniture" name="interior_furniture">
+          </div>
+          <div class="field">
+            <label for="i-photos">Photos</label>
+            <input type="file" id="i-photos" name="attachment" multiple accept="image/*">
+          </div>
+          <div class="quiet phototips">
+            <h3>Photos that help</h3>
+            <p>One wide shot per room, taken from a corner — back into it and get as much of the room as you can. Then a close-up of anything that needs attention. Inside, turn all the lights on.</p>
+          </div>
+        </fieldset>
+
+        <!-- ============ EXTERIOR ============ -->
+        <fieldset id="s-exterior" hidden>
+          <legend>Exterior painting</legend>
+          <fieldset>
+            <legend>One story or two?</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="exterior_stories" value="One story"> One story</label>
+              <label><input type="radio" name="exterior_stories" value="Two story"> Two story</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="e-siding">Siding material</label>
+            <select id="e-siding" name="exterior_siding">
+              <option value="">Pick one…</option>
+              <option>Wood</option>
+              <option>LP / engineered wood</option>
+              <option>Vinyl</option>
+              <option>Stucco</option>
+              <option>Cedar</option>
+              <option>Log</option>
+              <option>Not sure</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>What's getting painted?</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="exterior_scope" value="Body only"> Body only</label>
+              <label><input type="radio" name="exterior_scope" value="Body plus trim, soffit, fascia, doors, garage doors"> Trim, soffit, fascia, doors, garage doors too</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="e-last">When was it last painted?</label>
+            <input type="text" id="e-last" name="exterior_last_painted">
+          </div>
+          <div class="field">
+            <label for="e-cond">Anything peeling, chalking, cracking, or soft?</label>
+            <textarea id="e-cond" name="exterior_condition" rows="2"></textarea>
+          </div>
+          <div class="field">
+            <label for="e-photos">Photos</label>
+            <input type="file" id="e-photos" name="attachment" multiple accept="image/*">
+          </div>
+          <div class="quiet phototips">
+            <h3>Photos that help</h3>
+            <p>Eight shots — one of each side of the house, and one of each corner. Corners matter as much as sides because they show me two walls and the rooflines at once. Leave the landscaping in frame — I need to see whether a tree or shrub will keep me from setting a ladder.</p>
+          </div>
+        </fieldset>
+
+        <!-- ============ CABINETS ============ -->
+        <fieldset id="s-cabinets" hidden>
+          <legend>Cabinets</legend>
+          <div class="field">
+            <label for="c-doors">How many cabinet doors?</label>
+            <input type="text" id="c-doors" name="cabinets_doors" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="c-drawers">How many drawer fronts?</label>
+            <input type="text" id="c-drawers" name="cabinets_drawers" inputmode="numeric">
+          </div>
+          <fieldset>
+            <legend>What's on them now?</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="cabinets_finish" value="Stained and clear-coated"> Stained and clear-coated</label>
+              <label><input type="radio" name="cabinets_finish" value="Already painted"> Already painted</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Boxes and insides too?</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="cabinets_boxes" value="Yes"> Yes</label>
+              <label><input type="radio" name="cabinets_boxes" value="No, fronts only"> No, fronts only</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Hardware</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="cabinets_hardware" value="Keeping it"> Keeping it</label>
+              <label><input type="radio" name="cabinets_hardware" value="Changing it"> Changing it</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="c-photos">Photos</label>
+            <input type="file" id="c-photos" name="attachment" multiple accept="image/*">
+          </div>
+          <div class="quiet phototips">
+            <h3>Photos that help</h3>
+            <p>One shot of each wall that has cabinets — in most kitchens that's three: the sink wall, the range wall, and the fridge wall. Both sides of the island. And one photo of the inside of a single cabinet with the door open — that tells me whether they're clear-coated or painted and what your hinges are, which changes the price more than you'd think.</p>
+          </div>
+        </fieldset>
+
+        <!-- ============ DECKS & FENCES ============ -->
+        <fieldset id="s-decks" hidden>
+          <legend>Decks &amp; fences</legend>
+          <div class="field">
+            <label for="d-size">Deck length and width — or feet of fence</label>
+            <input type="text" id="d-size" name="decks_size">
+          </div>
+          <div class="field">
+            <label for="d-steps">How many steps?</label>
+            <input type="text" id="d-steps" name="decks_steps" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="d-rail">How much railing?</label>
+            <input type="text" id="d-rail" name="decks_railing">
+          </div>
+          <div class="field">
+            <label for="d-cond">What's on it now, and how bad is it failing?</label>
+            <textarea id="d-cond" name="decks_condition" rows="2"></textarea>
+          </div>
+          <fieldset>
+            <legend>Has it ever been stripped or sanded?</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="decks_stripped" value="Yes"> Yes</label>
+              <label><input type="radio" name="decks_stripped" value="No"> No</label>
+              <label><input type="radio" name="decks_stripped" value="Not sure"> Not sure</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="d-photos">Photos</label>
+            <input type="file" id="d-photos" name="attachment" multiple accept="image/*">
+          </div>
+          <div class="quiet phototips">
+            <h3>Photos that help</h3>
+            <p>One of the whole thing, then get down close on the boards and the railing. A gray deck in a wide shot could mean wash-and-stain or it could mean strip, sand, and start over — I can't tell those apart from twenty feet.</p>
+          </div>
+        </fieldset>
+
+        <!-- ============ LOG HOME ============ -->
+        <fieldset id="s-log" hidden>
+          <legend>Log home</legend>
+          <div class="field">
+            <label for="l-size">Rough size of the log walls</label>
+            <input type="text" id="l-size" name="log_size">
+          </div>
+          <div class="field">
+            <label for="l-cond">Current finish and condition</label>
+            <textarea id="l-cond" name="log_condition" rows="2"></textarea>
+          </div>
+          <fieldset>
+            <legend>What's the job?</legend>
+            <div class="choice-row">
+              <label><input type="checkbox" name="log_work" value="Staining"> Staining</label>
+              <label><input type="checkbox" name="log_work" value="Chinking"> Chinking</label>
+              <label><input type="checkbox" name="log_work" value="Stripping"> Stripping</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Included too?</legend>
+            <div class="choice-row">
+              <label><input type="checkbox" name="log_extras" value="Gables"> Gables</label>
+              <label><input type="checkbox" name="log_extras" value="Dormers"> Dormers</label>
+              <label><input type="checkbox" name="log_extras" value="Rafters"> Rafters</label>
+              <label><input type="checkbox" name="log_extras" value="Decking"> Decking</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="l-photos">Photos</label>
+            <input type="file" id="l-photos" name="attachment" multiple accept="image/*">
+          </div>
+          <div class="quiet phototips">
+            <h3>Photos that help</h3>
+            <p>Eight shots — one of each side, and one of each corner. Corners show me two walls and the rooflines at once. Leave the landscaping in frame — I need to see whether a tree or shrub will keep me from setting a ladder.</p>
+          </div>
+        </fieldset>
+
+        <!-- ============ FURNITURE ============ -->
+        <fieldset id="s-furniture" hidden>
+          <legend>Furniture</legend>
+          <div class="field">
+            <label for="fu-what">What's the piece?</label>
+            <input type="text" id="fu-what" name="furniture_piece" placeholder="e.g. dresser, table and chairs, hutch">
+          </div>
+          <div class="field">
+            <label for="fu-size">Rough size</label>
+            <input type="text" id="fu-size" name="furniture_size">
+          </div>
+          <fieldset>
+            <legend>Painted or stained now?</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="furniture_finish" value="Painted"> Painted</label>
+              <label><input type="radio" name="furniture_finish" value="Stained"> Stained</label>
+              <label><input type="radio" name="furniture_finish" value="Not sure"> Not sure</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="fu-count">How many pieces?</label>
+            <input type="text" id="fu-count" name="furniture_count" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="fu-photos">Photos</label>
+            <input type="file" id="fu-photos" name="attachment" multiple accept="image/*">
+          </div>
+          <div class="quiet phototips">
+            <h3>Photos that help</h3>
+            <p>All sides of the piece, plus a close-up of the finish.</p>
+          </div>
+        </fieldset>
+
+        <!-- ============ HOUSE WASHING ============ -->
+        <fieldset id="s-housewash" hidden>
+          <legend>House washing</legend>
+          <fieldset>
+            <legend>One story or two?</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="housewash_stories" value="One story"> One story</label>
+              <label><input type="radio" name="housewash_stories" value="Two story"> Two story</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="h-siding">Siding material</label>
+            <select id="h-siding" name="housewash_siding">
+              <option value="">Pick one…</option>
+              <option>Vinyl</option>
+              <option>Wood</option>
+              <option>LP / engineered wood</option>
+              <option>Stucco</option>
+              <option>Cedar</option>
+              <option>Log</option>
+              <option>Not sure</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>What's the staining?</legend>
+            <div class="choice-row">
+              <label><input type="checkbox" name="housewash_staining" value="Green growth"> Green growth</label>
+              <label><input type="checkbox" name="housewash_staining" value="Dirt"> Dirt</label>
+              <label><input type="checkbox" name="housewash_staining" value="Rust"> Rust</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Working outdoor spigot?</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="housewash_spigot" value="Yes"> Yes</label>
+              <label><input type="radio" name="housewash_spigot" value="No"> No</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="h-photos">Photos</label>
+            <input type="file" id="h-photos" name="attachment" multiple accept="image/*">
+          </div>
+          <div class="quiet phototips">
+            <h3>Photos that help</h3>
+            <p>Eight shots — one of each side of the house, and one of each corner. Corners matter as much as sides because they show me two walls and the rooflines at once. Leave the landscaping in frame.</p>
+          </div>
+        </fieldset>
+
+        <!-- ============ CONCRETE WASHING ============ -->
+        <fieldset id="s-concrete" hidden>
+          <legend>Concrete washing</legend>
+          <fieldset>
+            <legend>What surface?</legend>
+            <div class="choice-row">
+              <label><input type="checkbox" name="concrete_surface" value="Driveway"> Driveway</label>
+              <label><input type="checkbox" name="concrete_surface" value="Sidewalk"> Sidewalk</label>
+              <label><input type="checkbox" name="concrete_surface" value="Patio"> Patio</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="cw-size">Rough size — or skip it, and I'll measure it off the map from your address</label>
+            <input type="text" id="cw-size" name="concrete_size">
+          </div>
+          <fieldset>
+            <legend>What's the staining?</legend>
+            <div class="choice-row">
+              <label><input type="checkbox" name="concrete_staining" value="Dirt"> Dirt</label>
+              <label><input type="checkbox" name="concrete_staining" value="Green growth"> Green growth</label>
+              <label><input type="checkbox" name="concrete_staining" value="Rust"> Rust</label>
+              <label><input type="checkbox" name="concrete_staining" value="Oil"> Oil</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="cw-photos">Photos</label>
+            <input type="file" id="cw-photos" name="attachment" multiple accept="image/*">
+          </div>
+          <div class="quiet phototips">
+            <h3>Photos that help</h3>
+            <p>One wide shot, then a close-up of the worst of it.</p>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="quiet mt">
+        <h3>For every job: light and problem spots</h3>
+        <p>Shoot on an overcast day or in the morning if you can — hard midday sun blows out siding and hides the chalking and cracking I'm looking for. Inside, turn all the lights on.</p>
+        <p>And at the end: close-ups of every problem spot — peeling paint, soft or rotted wood, cracked caulk, water stains, dents, holes, a patch someone else did. Get close enough to actually see it. These are the shots that keep my number honest, and they're the ones people leave out most often.</p>
+      </div>
+
+      <div class="quiet mt">
+        <h3>Better yet, shoot a video</h3>
+        <p>A ninety-second video beats twenty photos.</p>
+        <p>Walk slow — slower than feels natural. Pan across whole walls instead of jumping around. Talk while you film: "this is the ceiling with the water stain," "this is the corner that keeps peeling." That narration is worth as much as the picture. Stop and hold three or four seconds on anything that looks like a problem. One clip per room, thirty to sixty seconds each.</p>
+        <p><b>Sending it:</b> the upload above takes photos, not big video files. Text videos straight to me at <a href="tel:+19074147475" data-phone-href><span data-phone>(907) 414-7475</span></a>, or email a link to <a href="mailto:abe@heritagepainting.com">abe@heritagepainting.com</a>. If your phone says the file's too big to email, it'll offer to send a link instead — that works fine.</p>
+        <p><b>Or we can do it live.</b> Call me and we'll set up a video call. You walk, I'll tell you where to point. Fifteen minutes, and it's the most accurate way to do this without me being there.</p>
+      </div>
+
+      <div class="mt">
+        <button class="btn" type="submit">Send it to me</button>
+        <p class="hint mt">I'll look everything over and get you a written price, usually in a day or two.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What happens next</h2>
+    <p class="lead">I'll look everything over and get you a written price, usually in a day or two. It'll spell out what's included — the prep, the products, how many coats — not just a number at the bottom. If something in the photos doesn't add up, I'll call and ask rather than guess high.</p>
+
+    <div class="quiet mt">
+      <h3>Straight talk about photo estimates</h3>
+      <p>A photo estimate is an estimate. I'll stand behind the number as long as what's under the paint matches what I could see.</p>
+      <p>Here's what can change it, and I'd rather say so now than argue about it later:</p>
+      <ul>
+        <li>rot or soft wood that doesn't show in a picture</li>
+        <li>wallpaper under the paint</li>
+        <li>failed caulk you can't see from twenty feet</li>
+        <li>a deck that needs stripping and sanding, not just washing</li>
+        <li>an old finish that won't take a new coat without extra prep</li>
+        <li>lead-safe work on a pre-1978 house if the scope grows</li>
+      </ul>
+      <p>If I run into any of that, I stop and show you before I do anything. You get a written change order with a price on it and you decide. No work happens on something you didn't agree to, and no surprise line items at the end.</p>
+      <p>On some jobs — usually older houses, or anything with a lot of unknowns — I'll give you a range instead of a single number and firm it up on day one. That's me being honest, not hedging.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Rather just talk it through?</h2>
+    <a class="phone-big" href="tel:+19074147475" data-phone-href><span data-phone>(907) 414-7475</span></a>
+    <p>Or email <a href="mailto:abe@heritagepainting.com">abe@heritagepainting.com</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap cols">
+    <div>
+      <img class="footer-logo" src="images/logo/heritage-logo-round.png" alt="" width="72" height="72">
+      <p><b>Heritage Painting</b><br>Work worth passing down.</p>
+      <p>I stand behind my work. If something I did isn't right, I come back and fix it.</p>
+      <a class="foot-call" href="tel:+19074147475" data-phone-href><span data-phone>(907) 414-7475</span></a><br>
+      <a href="mailto:abe@heritagepainting.com">abe@heritagepainting.com</a>
+    </div>
+    <div>
+      <h3>Pages</h3>
+      <ul>
+        <li><a href="interior.html">Interior Painting</a></li>
+        <li><a href="exterior.html">Exterior Painting</a></li>
+        <li><a href="cabinets.html">Cabinets &amp; Finish Work</a></li>
+        <li><a href="decks.html">Decks, Fences &amp; Log Homes</a></li>
+        <li><a href="pressure-washing.html">Pressure Washing</a></li>
+        <li><a href="commercial.html">Commercial</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="estimate.html">Get a Photo Estimate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Service area</h3>
+      <p>Based in Nimrod. I work throughout Wadena, Hubbard, Todd, and Cass counties — <a href="wadena.html">Wadena</a>, <a href="park-rapids.html">Park Rapids</a>, <a href="staples.html">Staples</a>, Motley, Menahga, Sebeka, Verndale, and everywhere in between.</p>
+    </div>
+  </div>
+  <div class="wrap legal">© 2026 Heritage Painting · Nimrod, Minnesota</div>
+</footer>
+
+<div class="call-bar">
+  <a href="tel:+19074147475" data-phone-href>Call <span data-phone>(907) 414-7475</span></a>
+</div>
+
+<script src="js/site.js"></script>
+<script src="js/estimate.js"></script>
+</body>
+</html>

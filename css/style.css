@@ -135,6 +135,10 @@ section { padding: clamp(3rem, 9vw, 5.5rem) 0; }
   text-transform: uppercase;
   white-space: nowrap;
 }
+/* narrow phones: logo + phone + menu only — the wordmark doesn't fit */
+@media (max-width: 33rem) {
+  .brand b { display: none; }
+}
 
 .header-call {
   color: var(--amber-soft);
@@ -182,18 +186,32 @@ section { padding: clamp(3rem, 9vw, 5.5rem) 0; }
 }
 .nav li a:hover, .nav li a[aria-current="page"] { background: var(--bg-2); color: var(--amber-soft); }
 
-@media (min-width: 60rem) {
-  .nav summary { display: none; }
-  .nav ul {
-    position: static;
-    display: flex;
-    background: none;
-    border: 0;
-    box-shadow: none;
-    padding: 0;
-    min-width: 0;
+/* desktop nav: separate static list (a closed <details> hides its contents,
+   so the mobile menu can't double as the desktop nav) */
+.nav-desktop { display: none; }
+@media (min-width: 64rem) {
+  .nav { display: none; }
+  .nav-desktop { display: block; }
+  .nav-desktop ul { display: flex; align-items: center; list-style: none; margin: 0; padding: 0; }
+  .nav-desktop li a {
+    display: block;
+    padding: .5rem .55rem;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .95rem;
+    white-space: nowrap;
+    border-radius: 6px;
   }
-  .nav li a { padding: .5rem .65rem; font-size: .98rem; white-space: nowrap; }
+  .nav-desktop li a:hover, .nav-desktop li a[aria-current="page"] { color: var(--amber-soft); }
+  .nav-desktop .nav-cta {
+    background: var(--amber);
+    color: var(--on-amber);
+    font-weight: 800;
+    margin-left: .4rem;
+    padding: .5rem .9rem;
+  }
+  .nav-desktop .nav-cta:hover { background: var(--amber-soft); color: var(--on-amber); }
 }
 
 /* ---------- sticky mobile call bar ---------- */
@@ -239,7 +257,7 @@ section { padding: clamp(3rem, 9vw, 5.5rem) 0; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 68%;
 }
 .hero::after {
   content: "";
@@ -412,6 +430,36 @@ legend { color: var(--text); font-weight: 800; padding: 0 .4em; }
 .choice-row { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; }
 .choice-row label { display: flex; align-items: center; gap: .45rem; font-weight: 600; margin: 0; }
 input[type="checkbox"], input[type="radio"] { width: 1.15rem; height: 1.15rem; accent-color: var(--amber); }
+
+/* ---------- estimate service picker ---------- */
+
+.pick-grid { grid-template-columns: 1fr 1fr; gap: .8rem; }
+@media (min-width: 48rem) { .pick-grid { grid-template-columns: repeat(4, 1fr); } }
+.pick-card {
+  position: relative;
+  display: block;
+  background: var(--bg-3);
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0;
+  font-weight: 700;
+  color: var(--text);
+}
+.pick-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.pick-card b { display: block; padding: .7rem .8rem; font-size: 1rem; }
+.pick-card input {
+  position: absolute;
+  top: .6rem;
+  left: .6rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin: 0;
+}
+.pick-card:has(input:checked) { border-color: var(--amber); }
+.pick-card:has(input:checked) b { color: var(--amber-soft); }
+.pick-card:hover { border-color: var(--amber-soft); }
 
 /* ---------- footer ---------- */
 
