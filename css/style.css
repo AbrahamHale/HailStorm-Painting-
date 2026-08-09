@@ -289,6 +289,10 @@ section { padding: clamp(3rem, 9vw, 5.5rem) 0; }
 /* smaller hero for interior pages */
 .hero-sub { min-height: min(56svh, 30rem); }
 .hero-sub .hero-inner { padding-top: clamp(3rem, 8vw, 5rem); }
+.hero-sub::after {
+  background: linear-gradient(180deg, rgba(20,16,9,.62) 0%, rgba(20,16,9,.45) 40%, rgba(20,16,9,.92) 85%, var(--bg) 100%);
+}
+.hero h1, .hero .tagline { text-shadow: 0 2px 14px rgba(0, 0, 0, .55); }
 
 /* ---------- cards / grids ---------- */
 
