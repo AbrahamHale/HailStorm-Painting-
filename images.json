@@ -177,6 +177,20 @@
   },
   {
    "folder": "exterior-residential",
+   "file": "red-boardwalk-rails.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Red-stained boardwalk and railing under a big summer sky"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "red-boardwalk-wide.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Long red-stained boardwalk deck with matching railings, mountains in the distance"
+  },
+  {
+   "folder": "exterior-residential",
    "file": "tan-house-garage.jpg",
    "role": "standalone",
    "pair": null,

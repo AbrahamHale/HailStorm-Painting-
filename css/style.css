@@ -139,6 +139,10 @@ section { padding: clamp(3rem, 9vw, 5.5rem) 0; }
 @media (max-width: 33rem) {
   .brand b { display: none; }
 }
+/* mid-size desktop: the full nav + wordmark don't both fit in the bar */
+@media (min-width: 64rem) and (max-width: 80rem) {
+  .brand b { display: none; }
+}
 
 .header-call {
   color: var(--amber-soft);
@@ -282,6 +286,10 @@ section { padding: clamp(3rem, 9vw, 5.5rem) 0; }
   max-width: 44ch;
 }
 
+/* smaller hero for interior pages */
+.hero-sub { min-height: min(56svh, 30rem); }
+.hero-sub .hero-inner { padding-top: clamp(3rem, 8vw, 5rem); }
+
 /* ---------- cards / grids ---------- */
 
 .grid {
@@ -393,6 +401,16 @@ section { padding: clamp(3rem, 9vw, 5.5rem) 0; }
 @media (min-width: 40rem) { .gallery-grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 64rem) { .gallery-grid { grid-template-columns: 1fr 1fr 1fr; } }
 .gallery-grid figure { margin: 0; }
+.gallery-section { margin-bottom: 2.8rem; padding: 0; }
+.gallery-section h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--amber-soft);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: .5rem;
+  margin-bottom: 1.1rem;
+}
 .gallery-grid img { width: 100%; border-radius: 10px; border: 1px solid var(--line); }
 .gallery-grid figcaption { font-size: .9rem; color: var(--muted); font-weight: 600; padding: .45rem .2rem 0; }
 

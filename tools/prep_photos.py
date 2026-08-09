@@ -35,7 +35,7 @@ IMAGES = os.path.join(ROOT, "images")
 MANIFEST = os.path.join(ROOT, "images.json")
 ALT_FILE = os.path.join(ROOT, "tools", "alt_text.json")
 
-SKIP_DIRS = {"logo", "extras"}
+SKIP_DIRS = {"logo", "extras", "stock"}  # stock: illustrative images, kept out of the portfolio gallery
 MAX_EDGE = 1600
 QUALITY = 80
 

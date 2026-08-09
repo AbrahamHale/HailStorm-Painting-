@@ -10,13 +10,14 @@
   var filterRow = document.getElementById("gallery-filters");
   if (!grid) return;
 
-  var LABELS = {
-    "exterior-residential": "Exterior — home",
-    "exterior-commercial": "Exterior — commercial",
-    "interior-residential": "Interior — home",
-    "interior-commercial": "Interior — commercial",
-    "furniture": "Furniture"
-  };
+  // section headings, in display order
+  var SECTIONS = [
+    ["exterior-residential", "Exterior — Homes"],
+    ["exterior-commercial", "Exterior — Commercial"],
+    ["interior-residential", "Interior — Homes"],
+    ["interior-commercial", "Interior — Commercial"],
+    ["furniture", "Furniture"]
+  ];
 
   function titleFromFile(file) {
     return file.replace(/\.(jpe?g|png)$/i, "").replace(/-/g, " ");
@@ -70,7 +71,7 @@
     fig.appendChild(box);
 
     var cap = document.createElement("figcaption");
-    cap.textContent = titleFromFile(pair.after.file).replace(/ after$/, "") + " — before / after";
+    cap.textContent = "Before / after — drag the handle";
     fig.appendChild(cap);
 
     function setPos(pct) {
@@ -134,10 +135,6 @@
 
     link.appendChild(img);
     fig.appendChild(link);
-
-    var cap = document.createElement("figcaption");
-    cap.textContent = LABELS[entry.folder] || entry.folder;
-    fig.appendChild(cap);
     return fig;
   }
 
@@ -159,12 +156,29 @@
         }
       });
 
-      Object.keys(pairs).forEach(function (key) {
-        var p = pairs[key];
-        if (p.before && p.after) grid.appendChild(makeSlider(p));
-      });
-      singles.forEach(function (entry) {
-        grid.appendChild(makePhoto(entry));
+      // one titled section per category, in a fixed order
+      SECTIONS.forEach(function (def) {
+        var folder = def[0], label = def[1];
+        var inFolder = singles.filter(function (e) { return e.folder === folder; });
+        var folderPairs = Object.keys(pairs).filter(function (k) {
+          return k.indexOf(folder + "/") === 0 && pairs[k].before && pairs[k].after;
+        });
+        if (!inFolder.length && !folderPairs.length) return;
+
+        var section = document.createElement("section");
+        section.className = "gallery-section";
+        section.dataset.folder = folder;
+
+        var h = document.createElement("h2");
+        h.textContent = label;
+        section.appendChild(h);
+
+        var g = document.createElement("div");
+        g.className = "gallery-grid";
+        folderPairs.forEach(function (k) { g.appendChild(makeSlider(pairs[k])); });
+        inFolder.forEach(function (e) { g.appendChild(makePhoto(e)); });
+        section.appendChild(g);
+        grid.appendChild(section);
       });
 
       if (filterRow) {
@@ -175,8 +189,8 @@
             filterRow.querySelectorAll("button").forEach(function (b) {
               b.setAttribute("aria-pressed", b === btn ? "true" : "false");
             });
-            grid.querySelectorAll("figure").forEach(function (fig) {
-              fig.hidden = want !== "all" && fig.dataset.folder !== want;
+            grid.querySelectorAll(".gallery-section").forEach(function (sec) {
+              sec.hidden = want !== "all" && sec.dataset.folder !== want;
             });
           });
         });
