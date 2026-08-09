@@ -1,0 +1,270 @@
+{
+ "images": [
+  {
+   "folder": "exterior-commercial",
+   "file": "blue-hall-rooftop-view.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Blue commercial hall with a black roof, seen from the neighboring rooftop"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "blue-metal-siding-midjob-closeup.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Blue coating going on over tan metal siding on a commercial building, shot from the lift"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "blue-metal-siding-midjob-wide.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Commercial metal building half repainted from tan to blue, lift and cones out front"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "blue-two-story-storefront.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Two-story blue commercial building on a street corner"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-building-fresh-coat.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Commercial building with a fresh coat of red, paint buckets still staged out front"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-building-masked-windows.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Red commercial building with windows masked off for spraying"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-garage-roadside.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Red garage building seen from the road"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-hall-after-rain.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Repainted red buildings after a rain"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-hall-clerestory.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Red hall with clerestory windows, repainted"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-hall-three-bays.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Freshly painted red hall with three overhead doors"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-steel-building-bay-open.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Dark red steel equipment building with the bay door open"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-steel-building-two-doors.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Red steel building with two white overhead doors"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-three-bay-garage.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Bright red three-bay garage building under a big sky"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-two-bay-doors.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Red building with two white bay doors, up close"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "blue-house-backyard.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Two-story house painted blue with white trim, from the backyard"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "blue-house-dusk.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Blue house and detached garage at dusk with the lights on"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "blue-house-patio.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Blue house with white trim around the patio doors and pergola"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "blue-house-walkout.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Blue house with white trim over a brick walkout"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "forest-green-split-level-deck.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Forest green split-level house with a wood deck"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "forest-green-split-level-porch.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Split-level house painted forest green, front porch side"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "green-house-and-garage.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Large sage green house and matching garage"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "green-house-paver-patio.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Sage green house behind a paver patio and retaining wall"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "green-new-build-front.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Front of a new gray-green house in the sun"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "green-new-build-garage.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "New house painted gray-green, garage side"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "green-siding-red-door.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Gray-green siding with a dark red front door and fresh trim"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "tan-house-garage.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Tan house with a dark green garage door"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "tan-house-hillside.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Tan house on a hillside with dark green shutters"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "teal-cottage-front-deck.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Teal cottage with a new front deck and black railing"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "teal-cottage-side.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Side of a teal cottage under the pines"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "white-gable-cabin.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "White gable-end cabin with board-and-batten accents"
+  },
+  {
+   "folder": "furniture",
+   "file": "cream-dresser-angle.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Refinished cream dresser in the spray booth, three-quarter view"
+  },
+  {
+   "folder": "furniture",
+   "file": "cream-dresser-front.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Dresser refinished in cream with the original black hardware"
+  },
+  {
+   "folder": "interior-commercial",
+   "file": "event-barn-chandelier.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "White event barn interior with trusses and a chandelier"
+  },
+  {
+   "folder": "interior-commercial",
+   "file": "event-barn-white-walls.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Event barn interior painted white, sliding doors with black hardware"
+  },
+  {
+   "folder": "interior-residential",
+   "file": "brown-accent-walls.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Room with warm brown accent walls and new flooring"
+  },
+  {
+   "folder": "interior-residential",
+   "file": "entryway-white-walls.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Entryway with freshly painted white walls and wood floors"
+  },
+  {
+   "folder": "interior-residential",
+   "file": "stairwell-landing.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Stairwell landing with white walls and gray-painted doors"
+  },
+  {
+   "folder": "interior-residential",
+   "file": "vaulted-wood-ceiling-room.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Room with a natural wood vaulted ceiling and crisp painted walls"
+  }
+ ]
+}
