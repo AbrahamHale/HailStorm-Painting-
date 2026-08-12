@@ -30,6 +30,34 @@
   },
   {
    "folder": "exterior-commercial",
+   "file": "bud-beech-fire-hall-sign.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Entrance of the Edward Bud Beech Fire Hall with fresh red paint"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "fire-hall-front-after.jpg",
+   "role": "after",
+   "pair": "fire-hall-front",
+   "alt": "The same fire hall front, repainted red"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "fire-hall-front-before.jpg",
+   "role": "before",
+   "pair": "fire-hall-front",
+   "alt": "Fire hall front with peeling paint and bare scraped wood, before repainting"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "four-bay-fire-hall.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Four-bay fire hall repainted red, gold sign over the doors"
+  },
+  {
+   "folder": "exterior-commercial",
    "file": "red-building-fresh-coat.jpg",
    "role": "standalone",
    "pair": null,
@@ -65,24 +93,24 @@
   },
   {
    "folder": "exterior-commercial",
-   "file": "red-hall-three-bays.jpg",
-   "role": "standalone",
-   "pair": null,
-   "alt": "Freshly painted red hall with three overhead doors"
-  },
-  {
-   "folder": "exterior-commercial",
-   "file": "red-steel-building-bay-open.jpg",
-   "role": "standalone",
-   "pair": null,
-   "alt": "Dark red steel equipment building with the bay door open"
-  },
-  {
-   "folder": "exterior-commercial",
    "file": "red-steel-building-two-doors.jpg",
    "role": "standalone",
    "pair": null,
    "alt": "Red steel building with two white overhead doors"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-three-bay-after.jpg",
+   "role": "after",
+   "pair": "red-three-bay",
+   "alt": "The same three-bay building repainted deep red"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "red-three-bay-before.jpg",
+   "role": "before",
+   "pair": "red-three-bay",
+   "alt": "Three-bay steel building with faded, chalking red paint, before repainting"
   },
   {
    "folder": "exterior-commercial",
@@ -99,11 +127,32 @@
    "alt": "Red building with two white bay doors, up close"
   },
   {
+   "folder": "exterior-commercial",
+   "file": "scraped-siding-prep.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Siding scraped to bare wood and windows masked, mid-preparation"
+  },
+  {
+   "folder": "exterior-commercial",
+   "file": "station-with-hydrant.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Fire station front with fresh red paint and landscaping"
+  },
+  {
    "folder": "exterior-residential",
    "file": "blue-house-backyard.jpg",
    "role": "standalone",
    "pair": null,
    "alt": "Two-story house painted blue with white trim, from the backyard"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "blue-house-dusk-garage.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Blue house and garage at dusk with the lights on"
   },
   {
    "folder": "exterior-residential",
@@ -125,6 +174,13 @@
    "role": "standalone",
    "pair": null,
    "alt": "Blue house with white trim over a brick walkout"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "craftsman-garage-doors.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Sage green garage with craftsman doors and white trim"
   },
   {
    "folder": "exterior-residential",
@@ -191,6 +247,13 @@
   },
   {
    "folder": "exterior-residential",
+   "file": "sage-house-corner.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Three-story corner of a sage green house, freshly painted"
+  },
+  {
+   "folder": "exterior-residential",
    "file": "tan-house-garage.jpg",
    "role": "standalone",
    "pair": null,
@@ -223,6 +286,20 @@
    "role": "standalone",
    "pair": null,
    "alt": "White gable-end cabin with board-and-batten accents"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "yellow-to-blue-house-after.jpg",
+   "role": "after",
+   "pair": "yellow-to-blue-house",
+   "alt": "The same house repainted deep blue with white trim"
+  },
+  {
+   "folder": "exterior-residential",
+   "file": "yellow-to-blue-house-before.jpg",
+   "role": "before",
+   "pair": "yellow-to-blue-house",
+   "alt": "Rear of a house in faded yellow paint, before repainting"
   },
   {
    "folder": "furniture",
@@ -261,6 +338,20 @@
   },
   {
    "folder": "interior-residential",
+   "file": "brown-room-after.jpg",
+   "role": "after",
+   "pair": "brown-room",
+   "alt": "The same room repainted with warm brown walls and new flooring"
+  },
+  {
+   "folder": "interior-residential",
+   "file": "brown-room-before.jpg",
+   "role": "before",
+   "pair": "brown-room",
+   "alt": "Room with dated tan walls before repainting"
+  },
+  {
+   "folder": "interior-residential",
    "file": "entryway-white-walls.jpg",
    "role": "standalone",
    "pair": null,
@@ -268,10 +359,24 @@
   },
   {
    "folder": "interior-residential",
+   "file": "gray-doors-bedroom.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Bedroom with gray-painted doors and crisp white walls"
+  },
+  {
+   "folder": "interior-residential",
    "file": "stairwell-landing.jpg",
    "role": "standalone",
    "pair": null,
    "alt": "Stairwell landing with white walls and gray-painted doors"
+  },
+  {
+   "folder": "interior-residential",
+   "file": "stairwell-window.jpg",
+   "role": "standalone",
+   "pair": null,
+   "alt": "Stairwell with a tall window and fresh white walls"
   },
   {
    "folder": "interior-residential",
